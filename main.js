@@ -2,7 +2,8 @@ function getQuestions() {
     const questionsQuantity = document.getElementById('questions-number').value
     const questionsCategory = document.getElementById('questions-category').value
     const questionsDifficulty = document.getElementById('questions-difficulty').value
-    fetch(`https://opentdb.com/api.php?amount=${questionsQuantity}&category=${questionsCategory}&difficulty=${questionsDifficulty}`)
+    const questionsType = document.getElementById('questions-type').value
+    fetch(`https://opentdb.com/api.php?amount=${questionsQuantity}&category=${questionsCategory}&difficulty=${questionsDifficulty}&type=${questionsType}`)
         .then(response => response.json())
         .then(data => printCards(data.results))
 }
