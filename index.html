@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universal Trivia - Squack 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="icon" type="image/png" href="C:\Users\wjaft\Desktop\Portafolio Beta\img\favicon.ico" />
-	<meta name="author" content="Juan Carlos & Jafet Brito">
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="icon" type="image/png" href="./ICON.png" />
+	  <meta name="author" content="Juan Carlos & Jafet Brito">
     <meta name="description" content="Trivia game">
     <meta name="keywords" content="HTML, CSS, JavaScript, Trivia, API">
     <style>
@@ -22,96 +24,90 @@
           }
     </style>
 </head>
+<body background="./fondo.gif" >
 
-<body background="./fondo.gif">
-    
-    <header>
-        
-   
+	<header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Squack ONE</a>
+    <a class="navbar-brand" href="www.git.com">Squack One</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Git</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Conctact
+          Contact
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">JC</a>
-          <a class="dropdown-item" href="#">JB</a>
+          <a class="dropdown-item" href="#">Juan Carlos</a>
+          <a class="dropdown-item" href="#">Jafet Brito</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">about this</a>
+          <a class="dropdown-item" href="#">about API</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">lorem</a>
-      </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
 </nav>
-        
-         </header>
-    
-    <div class="container mt-5">
-            <h1 class="bg-dark text-warning" align=center>Welcome to Universal Trivia</h1>
-            <p class="bg-dark text-warning" align=center>You are about to start a fun round of questions, show your knowledge, beat your score and challenge your friends.</p> 
+
+    </header>
+
+        <div class="container mt-5">
+            <h1 class="bg-ligth text-danger" align=center>Welcome to Universal Trivia</h1>
+            <p class="bg-ligth text-danger" align=center >You are about to start a fun round of questions, show your knowledge, beat your score and challenge your friends.</p> 
         </div>
-		<div class="col-md-12">
+		    <div class="col-md-12">
         <img src="./inicio.gif" class="img-fluid" class="bg-dark" alt="Imagen de inicio">
-		</div>
+    </div>
+  </div>
 		
 		<div class="container mt-5">
-		<h3 class="bg-dark text-warning" align=center> This web site is desing by J. J. with Trivia API<h3>
-		<h4 class="bg-info text-warning" align=center> A look </h4>
+		<h3 class="bg-ligth text-danger" align=center> This web site is desing by Squack One with Trivia API<h3>
+		<h4 class="bg-ligth text-danger" align=center> A look; </h4>
 		
 		<div class="card-group">
+    <div class="card bg-dark text-warning">
+    <img src="./books.gif" class="card-img-top" alt="Books">
+    <div class="card-body">
+      <h5 class="card-title bg-dark text-primary">Books</h5>
+      <p class="card-text text-black-50">Select the category of books and show your knowledge and culture. From the most basic level to the most arduous professor.</p>
+      
+    </div>
+  </div>
   <div class="card bg-dark text-warning">
     <img src="./cine.gif" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title bg-dark text-warning">Historia</h5>
-      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam pariatur libero tenetur impedit explicabo consectetur aliquam similique vitae ullam autem dicta, beatae aut expedita et nesciunt! Temporibus facere sapiente dignissimos?</p>
+      <h5 class="card-title text-primary">movie theater</h5>
+      <p class="card-text text-black-50">Select the movie category and show your ability to remember a movie scene or the entire script.</p>
       
     </div>
   </div>
   <div class="card bg-dark text-warning">
-    <img src="./history.gif" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Cine</h5>
-      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum iusto odit officiis ullam nam quidem reiciendis est, numquam aliquid nostrum animi dolores temporibus expedita dolor atque fugiat? Ad, tenetur excepturi?</p>
-      
-    </div>
-  </div>
-  <div class="card bg-dark text text-warning">
     <img src="./scifi.gif" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">Ciencia ficcion</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <h5 class="card-title text-primary">Ciencia ficcion</h5>
+      <p class="card-text text-black-50">select the science fiction category and show your ability to remember coordinates, stars and plans of nuclear batteries.</p>
       
     </div>
   </div>
  </div>
 </div>
     
-<figure class="figure align=center"> 
-<form>
-  <img src="./ejemplo.gif" class="figure-img img-center rounded " alt="...">
-  <figcaption class="figure-caption text-right">Good Luck.</figcaption>
-</figure>
-  <div class="form-group">
+        <!-- Que sirva para identificar al usuario, no esta conectada a js -->
+  <div class="container mt-5">
+    <div class="">
+      <h1 class="bg-dark text-warning align=center">PLay the game</h1>
+    </div>
+  </div>      
+        
+  <div class="form-group bg-dark text-warning center">
     <label for="formGroupExampleInput">Input you nickname</label>
     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Input you nickname">
   </div>
@@ -185,22 +181,25 @@
     </div>
 	
 	<div class="container mt-5">
-	<h1 class="bg-warning text-white">Score</h1>
-            <p class="bg-dark text-white">Score, score, score </p> 
+	<h1 class="bg-warning text-white">Score ... .... ... </h1>
         </div>
 		
 
 	<footer>
-	<div class="">
-	<h1> </h1>
+	<div class="final">
+  <h1 class="bg-ligth text-white">Thanks for visit the web site... </h1>
+  <h3 class="bg-ligth text-white">Wacht this works</h3>
 	</footer>
 	
 	
     <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 </body>
 
 </html>
-    
+
     
     
     
