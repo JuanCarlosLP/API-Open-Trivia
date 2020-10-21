@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    border: 0;
+    
+    font-family: 'Bebas Neue', cursive;
+    font-size: X-large;
+    
+}
+body {
+    width: 100%;
+    height: 19%;
+    background-color: tomato;
+    background-size: 10%;
+    background-position: 7rem;
+    
+    
+
+}
+div .container .mt-5 {
+    margin-top:  1rem !important;
+}
+header .figure{
+    text-align: center;
+}
+.figure { 
+    text-align: center;
+
+}
