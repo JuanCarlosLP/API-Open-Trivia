@@ -12,43 +12,49 @@ function getQuestions() {
 function printCards(questions) {
     const container = document.getElementById('container-cards');
     container.innerHTML = '';
-    questions.forEach(question => {
-        const card = returnCardHTML(question);
+    questions.forEach((question, index) => {
+        const card = returnCardHTML(question, index);
         container.innerHTML += card;
     });
 }
 
-function returnCardHTML(q) {
+function returnCardHTML(q, indexCard) {
     const card = `<div class="card">
                     <div class="card-body">
                     <h5 class="card-title">${q.category}</h5>
                     <h6 class="card-subtitle mb-2 text-muted">${q.question}</h6>
-                        ${returnAnswersHTML(q.correct_answer, q.incorrect_answers)}           
+                        ${returnAnswersHTML(q.correct_answer, q.incorrect_answers, indexCard)}           
                     </div>
                 </div>`
     return card;
 }
 
 
-function returnAnswersHTML(correct, incorrects) {
-    const correctHTML = `<div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                            <label class="form-check-label" for="exampleRadios1">
-                            ${correct}
-                            </label>
-                        </div>`;
+function returnAnswersHTML(correct, incorrects, indexCard) {
+    //const correctHTML = `<div class="form-check">
+    //                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+    //                        <label class="form-check-label" for="exampleRadios1">
+    //                        ${correct}
+    //                        </label>
+    //                    </div>`;
 
+    //  incorrects.push(correct)
+    //  correct = 1
+    //  incorrects = [2 ,3, 4, 1]
+
+    incorrects.push(correct)
+    //  incorrects = [2, 3, 4, 1]
 
     let incorrectHTML = '';
-    incorrects.forEach((incorrect) => {
+    incorrects.forEach((incorrect, index) => {
         incorrectHTML += `<div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                            <label class="form-check-label" for="exampleRadios1">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="answer-${indexCard}-${index}" value="option1" checked>
+                            <label class="form-check-label" for="answer-${indexCard}-${index}">
                             ${incorrect}
                             </label>
                         </div>`;
     })
 
 
-    return correctHTML + incorrectHTML;
+    return incorrectHTML;
 }
